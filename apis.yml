@@ -1,8 +1,25 @@
 aid: visibly
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/visibly.png
 name: Visibly
-description: 'Visibly is a company surfaced as a portfolio company of creandum, seedcamp and added to
-  the API Evangelist network as a stub for enrichment. Sector: saas. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Visibly is a UK-based workforce compliance management platform that helps enterprises
+  with large, distributed and subcontracted workforces automate their HSEQ (health, safety, environment
+  and quality) obligations. It centralizes worker onboarding, competency and certification tracking,
+  real-time compliance monitoring and alerts, audit and project reporting, and safety broadcast
+  communications, with integrations into existing HR, ERP, LMS and SharePoint systems and mobile-first
+  workflows for field workers. It is used across construction, manufacturing, FMCG, energy, public
+  services, infrastructure and logistics by organizations including Network Rail, National Grid, EDF,
+  Scottish Power, NHS and Danone. Backed by Creandum and Seedcamp.'
 url: https://raw.githubusercontent.com/api-evangelist/visibly/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Saas
+- Compliance
+- Workforce Management
+- Health and Safety
+- HSEQ
+- Enterprise
+- Construction
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/visibly-domain-security.yml
 - type: Website
   url: https://www.visiblyhq.com/
+- type: Pricing
+  url: https://www.visiblyhq.com/pricing
+- type: TermsOfService
+  url: https://www.visiblyhq.com/legal/terms-conditions
+- type: PrivacyPolicy
+  url: https://www.visiblyhq.com/legal/privacy-policy
+- type: Login
+  url: https://app.visiblyhq.com/
+- type: Support
+  url: mailto:support@visiblyhq.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
